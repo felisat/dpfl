@@ -1,0 +1,28 @@
+{ 
+
+"main" :
+[
+
+{
+	"dataset" : ["EMNIST"], 
+	"net" : ["ConvNet"],
+	
+	"n_clients" : [10],
+	"dirichlet_alpha" : [100.0],
+
+	"communication_rounds" : [100],
+	"local_epochs" : [1],
+	"participation_rate" : [0.5],
+	"batch_size" : [128],
+	"compression" : [["top_k", {"p" : 0.01}]],
+	"accumulate" : [true],
+
+	"pretrained" : [null],
+	"save_model" : [null],
+	"log_frequency" : [-100],
+	"log_path" : ["trash/"]
+}
+
+]
+
+}
